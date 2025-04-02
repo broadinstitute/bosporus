@@ -1,8 +1,8 @@
-mod shell;
+mod rt;
 mod files;
 
 pub fn launch_shell() {
-    let mut shell = shell::Shell::new();
-    shell.run();
+    let mut shell = rt::Runtime::new();
+    shell.interactive();
     println!("Done!");
 }
